@@ -51,7 +51,7 @@ export function Home() {
           <p className="hero-meta reveal">{t.hero.meta}</p>
         </div>
         <div className="hero-right reveal">
-          <Photo src="hero" alt="Bałtyk — Zatoka Gdańska" className="hero-photo" priority />
+          <Photo src="hero" alt="Bałtyk — wydmy nad Zatoką Gdańską" className="hero-photo" priority />
           <div className="hero-float">
             <span>54°N</span>
             <span>Baltic</span>
