@@ -464,8 +464,6 @@ ul {
 .display {
   font-size: clamp(42px, 10vw, 120px);
   max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: break-word;
 }
 
 .display span,
@@ -1465,7 +1463,9 @@ ul {
   }
 
   .page-hero .display {
-    font-size: clamp(36px, 11vw, 72px);
+    /* Keep single-word titles (Rezerwacja / Reservation) on one line */
+    font-size: clamp(28px, 8.4vw, 72px);
+    white-space: nowrap;
   }
 
   .nav-overlay-panel {
