@@ -114,7 +114,7 @@ export function Reservation() {
       </header>
 
       <div className="reserve-layout">
-        <Photo src="table" alt="Stolik SÓL" className="reserve-photo" />
+        <Photo src="dining" alt="Stolik SÓL" className="reserve-photo" />
       <form className="form-card" onSubmit={onSubmit} noValidate>
         <label>
           <span>{t.reservation.fields.name}</span>

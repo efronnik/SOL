@@ -839,25 +839,28 @@ ul {
 
 .featured-card {
   display: block;
-  background: var(--white);
+  min-height: 280px;
+  background:
+    radial-gradient(ellipse 90% 70% at 100% 0%, rgba(228, 236, 236, 0.9), transparent 55%),
+    linear-gradient(165deg, var(--white) 0%, #f3efe6 100%);
   border: 1px solid var(--line);
   overflow: hidden;
   transition: transform 0.35s var(--ease);
   -webkit-clip-path: polygon(
     0 0,
-    calc(100% - 28px) 0,
-    100% 28px,
+    calc(100% - 22px) 0,
+    100% 22px,
     100% 100%,
-    28px 100%,
-    0 calc(100% - 28px)
+    22px 100%,
+    0 calc(100% - 22px)
   );
   clip-path: polygon(
     0 0,
-    calc(100% - 28px) 0,
-    100% 28px,
+    calc(100% - 22px) 0,
+    100% 22px,
     100% 100%,
-    28px 100%,
-    0 calc(100% - 28px)
+    22px 100%,
+    0 calc(100% - 22px)
   );
 }
 
@@ -865,32 +868,60 @@ ul {
   transform: translateY(-6px);
 }
 
-.featured-card .photo {
-  height: 240px;
-  -webkit-clip-path: none;
-  clip-path: none;
+.featured-2 {
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(232, 93, 76, 0.1), transparent 50%),
+    linear-gradient(165deg, var(--white) 0%, #faf4ef 100%);
+}
+
+.featured-3 {
+  background:
+    radial-gradient(ellipse 80% 70% at 100% 100%, rgba(16, 42, 56, 0.08), transparent 55%),
+    linear-gradient(165deg, var(--foam) 0%, var(--white) 100%);
+}
+
+.featured-4 {
+  background:
+    radial-gradient(ellipse 70% 60% at 0% 0%, rgba(201, 181, 154, 0.28), transparent 50%),
+    linear-gradient(165deg, var(--white) 0%, #f0ebe3 100%);
 }
 
 .featured-meta {
-  padding: 18px;
+  padding: 28px 24px;
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.featured-index {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 18px;
 }
 
 .featured-meta h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
 }
 
 .featured-meta p {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: var(--ink-soft);
   font-size: 14px;
+  flex: 1;
 }
 
-.featured-meta span {
+.featured-meta span:last-child {
   font-size: 12px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  margin-top: auto;
 }
 
 .manifesto {
@@ -1463,8 +1494,12 @@ ul {
     width: 100%;
   }
 
-  .featured-card .photo {
-    height: 200px;
+  .featured-card {
+    min-height: 220px;
+  }
+
+  .featured-meta {
+    min-height: 220px;
   }
 
   .about-photo {

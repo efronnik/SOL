@@ -43,7 +43,7 @@ export function Contact() {
 
       <div className="contact-grid">
         <aside className="contact-aside">
-          <Photo src="interior" alt="SÓL Wrzeszcz" className="contact-photo" />
+          <Photo src="contact" alt="SÓL Wrzeszcz" className="contact-photo" />
           <div>
             <p className="footer-label">{t.contact.addressLabel}</p>
             <p className="contact-block">{t.contact.address}</p>

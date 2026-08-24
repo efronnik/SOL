@@ -105,12 +105,12 @@ export function Home() {
           </Link>
         </div>
         <div className="featured-rail">
-          {featured.map((item) => {
+          {featured.map((item, i) => {
             const copy = item[lang]
             return (
-              <Link to="/menu" key={item.id} className="featured-card reveal">
-                <Photo src={item.image} alt={copy.name} />
+              <Link to="/menu" key={item.id} className={`featured-card featured-${i + 1} reveal`}>
                 <div className="featured-meta">
+                  <span className="featured-index">0{i + 1}</span>
                   <h3>{copy.name}</h3>
                   <p>{copy.desc}</p>
                   <span>

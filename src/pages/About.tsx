@@ -38,9 +38,9 @@ export function About() {
       </div>
 
       <div className="about-gallery">
-        <Photo src="interior" alt="Sala SÓL" />
-        <Photo src="table" alt="Stół" />
-        <Photo src="sea" alt="Bałtyk" />
+        <Photo src="kitchen" alt="Przygotowanie w kuchni SÓL" />
+        <Photo src="drink" alt="Mineralny drink" />
+        <Photo src="bar" alt="Bar SÓL" />
       </div>
 
       <section className="values">
