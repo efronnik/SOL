@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { HeroWaves } from '../components/HeroWaves'
 import { Photo } from '../components/Photo'
 import { menuItems } from '../data/menu'
 import { useLanguage } from '../context/LanguageContext'
@@ -32,6 +33,7 @@ export function Home() {
   return (
     <div ref={root}>
       <section className="hero">
+        <HeroWaves />
         <div className="hero-left">
           <p className="kicker reveal">{t.hero.kicker}</p>
           <h1 className="display reveal">
@@ -76,12 +78,19 @@ export function Home() {
           <h2 className="display-sm">{t.tides.title}</h2>
         </div>
         <div className="tide-grid">
-          {t.tides.items.map((item) => (
-            <article key={item.label} className="tide-card reveal">
-              <h3>{item.label}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
+          {t.tides.items.map((item, i) => {
+            const [num, name] = item.label.split(' · ')
+            return (
+              <article key={item.label} className={`tide-card tide-${i + 1} reveal`}>
+                <span className="tide-mark" aria-hidden="true">
+                  {num}
+                </span>
+                <p className="tide-num">{num}</p>
+                <h3>{name ?? item.label}</h3>
+                <p>{item.text}</p>
+              </article>
+            )
+          })}
         </div>
       </section>
 

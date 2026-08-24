@@ -134,7 +134,7 @@ export const translations: Record<Lang, Translation> = {
       ctaMenu: 'Zobacz menu',
       ctaReserve: 'Zarezerwuj stolik',
       scroll: 'Przewiń',
-      meta: 'Otwarte wt–nd · 17:00–23:00',
+      meta: 'Otwarte wt–nd · pt–sb do 23:00 · nd do 21:00',
     },
     marquee: 'BALTIC SEA · RAW · FERMENT · FIRE · SALT · MINERAL ·  ',
     tides: {
@@ -291,7 +291,7 @@ export const translations: Record<Lang, Translation> = {
       ctaMenu: 'View menu',
       ctaReserve: 'Book a table',
       scroll: 'Scroll',
-      meta: 'Open Tue–Sun · 5–11 pm',
+      meta: 'Open Tue–Sun · Fri–Sat until 11 · Sun until 9',
     },
     marquee: 'BALTIC SEA · RAW · FERMENT · FIRE · SALT · MINERAL ·  ',
     tides: {
